@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .placeholder {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.placeholder p {
+    font-size: 1.2em;
+}
+
+/* Rest of your CSS styles remain unchanged */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #purple;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #434343, #000000);
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.2em;
+}
+
+footer {
+    background: linear-gradient(135deg, #434343, #000000);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Tech Company</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#bookings">Bookings</a></li>
+                    <li><a href="#social">Social</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="placeholder">
+                <p>Explore our cutting-edge services designed to meet your needs.</p>
+            </div>
+            <div class="image-placeholder">
+                    <img src="service1.jpg" alt="Service 1">
+                </div>
+                <div class="image-placeholder">
+                    <img src="service2.jpg" alt="Service 2">
+                </div>
+                <div class="image-placeholder">
+                    <img src="service3.jpg" alt="Service 3">
+        </div>
+    </section>
+
+    <section id="shop" class="section">
+        <div class="container">
+            <h2>Shop</h2>
+            <div class="placeholder">
+                <p>Discover the latest tech gadgets and accessories in our shop.</p>
+            </div>
+            <div class="image-placeholder">
+                    <img src="service1.jpg" alt="Service 1">
+                </div>
+                <div class="image-placeholder">
+                    <img src="service2.jpg" alt="Service 2">
+                </div>
+                <div class="image-placeholder">
+                    <img src="service3.jpg" alt="Service 3">
+        </div>
+    </section>
+
+    <section id="bookings" class="section">
+        <div class="container">
+            <h2>Bookings</h2>
+            <div class="placeholder">
+                <p>Schedule an appointment with our expert technicians.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="social" class="section">
+        <div class="container">
+            <h2>Follow Us on Social Media</h2>
+            <div class="placeholder">
+                <p>Stay connected with us on social media for updates and promotions.</p>
+            </div>
+            <div class="image-placeholder">
+                    <img src="service1.jpg" alt="Service 1">
+                </div>
+                <div class="image-placeholder">
+                    <img src="service2.jpg" alt="Service 2">
+                </div>
+                <div class="image-placeholder">
+                    <img src="service3.jpg" alt="Service 3">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tech Company. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+function showTime() {
+	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+}
+showTime();
+setInterval(function () {
+	showTime();
+}, 1000);
